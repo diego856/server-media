@@ -1,30 +1,5 @@
 # 🎬 Home Media Server (Docker)
 
-Este repositorio contiene la orquestación en **Docker Compose** para desplegar un servidor de medios automatizado utilizando la suite *arr*.
-
-## 🚀 Servicios Incluidos
-
-* **Sonarr:** Gestión y descarga automática de Series de TV.
-* **Radarr:** Gestión y descarga automática de Películas.
-* **Jackett:** Proxy de indexadores (Torrents) para conectar con Sonarr y Radarr.
-
-## 📋 Requisitos Previos
-
-* **Docker Desktop** instalado y corriendo.
-* **Git** instalado.
-
-## 📄 Documentación Completa
-
-Para ver el paso a paso detallado de la configuración interna de los programas, los indexadores y cómo conectarlos, consulta el siguiente documento:
-
-👉 **[Ver Guía de Configuración en Google Docs](https://docs.google.com/document/d/1EZ0vU58icq1t8oUcNZAGJvHG7osmrCefVSWYhQs2OfI/edit?tab=t.0)**
-
----
-
-## 🛠️ Instalación y Puesta en Marcha
-
-# 🎬 Home Media Server (Docker)
-
 Este repositorio contiene la orquestación en **Docker Compose** para desplegar un servidor de medios automatizado utilizando la suite *arr* (Sonarr, Radarr y Jackett).
 
 ## 🚀 Servicios Incluidos
