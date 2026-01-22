@@ -74,9 +74,3 @@ Resultado: Docker detectará los datos existentes y los servicios arrancarán co
 - Este repositorio solo contiene la definición/estructura (`docker-compose.yml`). Las configuraciones sensibles (bases de datos, claves de API, etc.) viven localmente en la carpeta de datos (por ejemplo `DockerData`).
 - Para usuarios nuevos: la carpeta de datos se genera al iniciar los contenedores.
 - Haz backups periódicos de esa carpeta; no se sube a GitHub por seguridad.
-
----
-
-## 🧾 Actualizar este README en GitHub
-
-Para subir los cambios locales al repositorio remoto, ejecuta en tu terminal (VS Code / PowerShell):
