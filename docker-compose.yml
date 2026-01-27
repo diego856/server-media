@@ -59,12 +59,16 @@ services:
     restart: unless-stopped
 
   homarr:
-      container_name: homarr
-      image: ghcr.io/ajnart/homarr:latest
-      restart: unless-stopped
-      volumes:
-        - ./homarr/configs:/app/data/configs
-        - ./homarr/icons:/app/public/icons
-        - ./homarr/data:/data
-      ports:
-        - '7575:7575'
+    container_name: homarr
+    image: ghcr.io/ajnart/homarr:latest
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Argentina/Buenos_Aires
+    volumes:
+      - C:\DockerData\Homarr\configs:/app/data/configs
+      - C:\DockerData\Homarr\icons:/app/public/icons
+      - C:\DockerData\Homarr\data:/data
+    ports:
+      - '7575:7575'
