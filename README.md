@@ -4,22 +4,24 @@ Este repositorio contiene la orquestación en **Docker Compose** para desplegar 
 
 ## 🚀 Servicios Incluidos
 
-- **Sonarr:** Gestión y descarga automática de series de TV.
-- **Radarr:** Gestión y descarga automática de películas.
-- **Jackett:** Proxy de indexadores (torrents) para conectar con Sonarr y Radarr.
+* **Homarr:** Dashboard centralizado para acceder a todos los servicios desde un solo lugar.
+* **Sonarr:** Gestión y descarga automática de series de TV.
+* **Radarr:** Gestión y descarga automática de películas.
+* **Bazarr:** Descarga y gestión automática de subtítulos (ideal para evitar versiones de mala calidad o desfasadas).
+* **Jackett:** Proxy de indexadores (torrents) para conectar con la suite *arr*.
 
 ## 📋 Requisitos Previos
 
-- **Docker Desktop** instalado y ejecutándose.
-- **Git** instalado.
+* **Docker Desktop** instalado y ejecutándose (se recomienda usar el motor WSL 2).
+* **Git** instalado para clonar el repositorio.
+* Tener definidos los discos de almacenamiento (ej: `C:` para configuración y `D:` para contenido).
 
+---
 ## 📄 Documentación Completa
 
 Para ver el paso a paso detallado de la configuración interna de los programas, los indexadores y cómo conectarlos, consulta:
-
+Tambien es útil para instalar plex y flaresolver para solucionar algunos problemas de conexion de jackett con algunos indexers
 👉 [Guía de Configuración (Google Docs)](https://docs.google.com/document/d/1EZ0vU58icq1t8oUcNZAGJvHG7osmrCefVSWYhQs2OfI/edit?tab=t.0)
-
----
 
 ## 🛠️ Instalación y Puesta en Marcha
 
