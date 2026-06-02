@@ -71,4 +71,17 @@ services:
       - C:\DockerData\Homarr\icons:/app/public/icons
       - C:\DockerData\Homarr\data:/data
     ports:
-      - '7575:7575'
+      - 7575:7575
+
+  whisper:
+    image: onerahmet/openai-whisper-asr-webservice:latest
+    container_name: whisper-api
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Argentina/Buenos_Aires
+      - ASR_MODEL=base
+      - ASR_ENGINE=faster_whisper
+    ports:
+      - 9000:9000
+    restart: unless-stopped
