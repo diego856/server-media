@@ -72,16 +72,3 @@ services:
       - C:\DockerData\Homarr\data:/data
     ports:
       - 7575:7575
-
-  whisper:
-    image: ahmetkca/whisper-asr-webservice:latest
-    container_name: whisper-api
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=America/Argentina/Buenos_Aires
-      - ASR_MODEL=medium
-      - ASR_ENGINE=faster_whisper
-    ports:
-      - 9000:9000
-    restart: unless-stopped
